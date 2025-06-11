@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MKStream - Music App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-animated-bg">
+        <span class="note" style="left:10%;">&#119070;</span>
+        <span class="note note2">&#9835;</span>
+        <span class="note note3">&#119071;</span>
+        <span class="note note4">&#119070;</span>
+        <span class="note note5">&#9833;</span>
+      </div>
+
+      <div class="logo">🎵 MKStream</div>
+      <nav>
+        <a href="#" class="active"><i data-feather="home"></i> Home</a>
+        <a href="#" id="nav-search"><i data-feather="search"></i> Search</a>
+        <a href="#" id="nav-library"><i data-feather="book"></i> Library</a>
+        <div class="playlist-animated-effect">
+          <div class="pulse-ring"></div>
+          <div class="pulse-ring pulse-ring2"></div>
+          <div class="playlist-music-icon">
+            <!-- Music Note Unicode or SVG Icon -->
+            <span>&#119071;</span>
+          </div>
+        </div>
+        <div class="sidebar-animated-bg">
+          <span class="note" style="left:10%;">&#119070;</span>
+          <span class="note note2">&#9835;</span>
+          <span class="note note3">&#119071;</span>
+          <span class="note note4">&#119070;</span>
+          <span class="note note5">&#9833;</span>
+        </div>
+        <div class="playlist-animated-bg">
+          <span class="playlist-note big-note" style="left:8%;">&#119070;</span>
+          <span class="playlist-note big-note2" style="left:60%;">&#9835;</span>
+          <span class="playlist-note big-note3" style="left:30%;">&#119071;</span>
+          <span class="playlist-note big-note4" style="left:80%;">&#9833;</span>
+        </div>
+      </nav>
+    </aside>
+    <main>
+      <header>
+        <input class="search" type="text" placeholder="Search for songs, artists..." id="search-input" />
+        <button id="theme-toggle" title="Toggle light/dark mode"><i data-feather="moon"></i></button>
+      </header>
+
+      <!-- Albums Section -->
+      <section class="albums-section">
+        <h2>Featured Albums</h2>
+        <div class="albums-grid" id="albums-grid">
+          <!-- Album cards injected by JS -->
+        </div>
+      </section>
+
+      <!-- Playlists Section -->
+      <section class="your-playlists-flex">
+        <div class="playlist-cards-col">
+          <h2>Your Playlists</h2>
+          <div class="playlists-grid" id="playlists-grid">
+            <!-- Playlist cards injected by JS -->
+          </div>
+        </div>
+        <div class="playlist-highlight-info">
+          <div class="ph-row ph-made">
+            Made with <span class="ph-heart">&#10084;&#65039;</span><span class="ph-sparkle">&#x2728;</span><span class="ph-groove">Groove</span>
+          </div>
+          <div class="ph-row ph-copyright">
+            <span class="ph-c-icon">&copy;</span><span class="ph-mk">MK</span>
+          </div>
+          <div class="ph-row ph-powered">
+            Powered By <span class="ph-mandar">Mandar Kajbaje</span>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Search Results Section -->
+      <section class="search-results-section" id="search-results-section" style="display:none;">
+        <h2>Search Results</h2>
+        <div class="songs-list" id="search-results-list"></div>
+      </section>
+    </main>
+    <footer class="player" id="player">
+      <!-- Music player controls injected by JS -->
+    </footer>
+  </div>
+  <script src="app.js"></script>
+  <script>feather.replace()</script>
+</body>
+</html>
