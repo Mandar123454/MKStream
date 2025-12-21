@@ -1,0 +1,24 @@
+---------------------------------------------------
+Here are the ownership and the certification details
+of the MKStream 1.0
+---------------------------------------------------
+
+app_name - 						MKStream
+app_alias - 					mkstream
+app_author_name - 				My Company
+app_author_organizational - 	My Company
+app_author_organization - 		My Company
+app_author_locality - 			My Company
+app_author_state - 				Maharashtra
+app_author_country - 			India
+app_password - 					Uuon6x7FQW5s
+app_versionName - 				versionName "1.0"
+app_versionCode - 				100
+
+---------------------------------------------------
+The certification was created by WebIntoApp.com at
+the Wednesday 11th of June 2025 12:36:46 PM
+
+https://www.webintoapp.com
+---------------------------------------------------
+
